@@ -1,0 +1,29 @@
+{
+    "name": "cta/search-bundle",
+    "description": "Provides a quick way of adding searching, sorting, and filtering to Doctrine ORM entities",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+      {
+          "name": "Tyler Hand",
+          "email": "tyler.hand@cascadetech.org",
+          "homepage": "http://www.cascadetech.org/",
+          "role": "Developer"
+      }
+    ],
+    "require": {
+      "php": "^7.1.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "symfony/orm-pack": "^1.0",
+        "symfony/framework-bundle": "^4.1",
+        "symfony/debug-bundle": "^4.1",
+        "doctrine/annotations": "^1.6"
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "CTA\\SearchBundle\\": "./"
+      }
+    }
+}

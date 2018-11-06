@@ -1,0 +1,14 @@
+services:
+  cta.search.reader:
+    class: CTA\SearchBundle\Search\SearchableReader
+    autowire: false
+    arguments:
+      - '@Doctrine\Common\Annotations\Reader'
+  cta.search.manager:
+    class: CTA\SearchBundle\Search\SearchableManager
+    autowire: false
+    arguments:
+      - '@CTA\SearchBundle\Search\SearchableReader'
+
+  CTA\SearchBundle\Search\SearchableReader: '@cta.search.reader'
+  CTA\SearchBundle\Search\SearchableManager: '@cta.search.manager'
