@@ -21,7 +21,7 @@
         "symfony/debug-bundle": "^4.1",
         "doctrine/annotations": "^1.6"
     },
-    "autoload-dev": {
+    "autoload": {
       "psr-4": {
         "CTA\\SearchBundle\\": "./"
       }
