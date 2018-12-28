@@ -98,6 +98,14 @@ class Search
 
         return $filters;
     }
+    
+    /**
+     * Return filters unmodified
+     */
+    public function getRawFilters() : array
+    {
+        return $this->filters;   
+    }
 
     /**
      * Add a filter to the search
