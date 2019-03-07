@@ -135,6 +135,7 @@ class SearchableRepository extends EntityRepository
         // Run total count
         $countQueryBuilder = clone $queryBuilder;
         $countQueryBuilder->select("COUNT(DISTINCT ${alias})");
+        $countQueryBuilder->resetDQLPart('orderBy');
         $count = $countQueryBuilder->getQuery()->getSingleScalarResult();
         unset($countQueryBuilder);
 
