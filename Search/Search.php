@@ -198,6 +198,16 @@ class Search
 
         return $sorts;
     }
+    
+    /**
+     * Get the raw value of the sorts input
+     *
+     * @return array Raw sorts
+     */
+    public function getRawSorts() : array
+    {
+        return $this->sorts;   
+    }
 
     /**
      * Add a sort to the search
