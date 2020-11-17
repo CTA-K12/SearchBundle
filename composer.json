@@ -1,5 +1,5 @@
 {
-    "name": "cta/search-bundle",
+    "name": "cta-k12/search-bundle",
     "description": "Provides a quick way of adding searching, sorting, and filtering to Doctrine ORM entities",
     "type": "symfony-bundle",
     "license": "MIT",
